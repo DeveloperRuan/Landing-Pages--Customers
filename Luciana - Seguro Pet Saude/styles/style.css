@@ -1173,9 +1173,6 @@ nav .container .content .nav-links .item.btn h6 a {
     color: var(--dark-blue);
     
     text-align: center;
-}
-
-.container.steps .content .text .title {
     font-weight: 700;
 }
 
@@ -1426,7 +1423,6 @@ nav .container .content .nav-links .item.btn h6 a {
     
     position: relative;
     margin: 32px auto 0;
-    
 }
 
 .container.faq .content .column .column .item {
@@ -1643,7 +1639,11 @@ footer .container.footer .content .row ~ .text {
         line-height: 36px;
     }
 
-    nav {
+    .content {
+        padding: 50px 8px;
+    }
+
+    nav .container .content {
         width: 100%;
         height: 53px;
     
@@ -1660,61 +1660,400 @@ footer .container.footer .content .row ~ .text {
         z-index: 10;
     }
 
-    nav .container .content {
-        width: 100%;
-        height: 100%;
-    
-        position: relative;
-    
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    nav .container .content .row .logo {
-        width: 101px;
-        height: 37px;
-    
-        position: relative;
-        margin: auto 0;
-    }
-
-    nav .container .content .row .logo img {
-        width: 101px;
-        height: 100%;
-    }
-
-    nav .container .content .row .logo small {
-        width: 100%;
-    
-        position: absolute;
-        top: 27px;
-        right: 0;
-    
-        text-align: right;
-    
-        color: var(--pink);
-    }
-
-    nav .container .content .nav-links {
-        height: 100%;
-    
-        margin: auto 0;
-    
-        display: none;
-        flex-direction: row;
-        align-items: center;
+    nav .container .content .nav-links .contact {
+        margin: 0;
     }
 
     nav .container .content .nav-links .contact a {
+        color: var(--dark-blue);
+    
+        font-weight: 600;
         font-size: 12px;
     }
 
     nav .container .content .nav-links .contact i {
-        margin: 0 8px 0 0;
-        
+        margin-right: 8px;
+    
         font-size: 22px;
-        
+    
         color: #3CC825;
     }
+
+    nav .container .content .nav-links .item {
+        display: none;
+    }
+
+    .container.header .content {
+        padding: 85px 8px 0;
+    }
+
+    .container.header .content .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container.header .content .column .img.header {
+        width: 207px;
+        height: 156px;
+
+        position: absolute;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+    }
+
+    .container.header .content .column .img.header img {
+        width: 207px;
+        height: 156px;
+
+        opacity: .10;
+    }
+
+    .container.header .content .column.form {
+        margin-left: 0;
+    }
+
+    .container.header .content .column.form .text .subtitle {
+        margin: 32px 0 0;
+    }
+
+    .container.header .content .column.form .form form {
+        padding: 16px;
+    }
+
+    .container.header .content .column.form .form form .inputs .input input {
+        height: 39px;
+        
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .container.header .content .column.form .form form .btn input {
+        padding: 8px 16px;  
+    }
+
+    .container.header .content .column .row.below-form .text .paragraph p::after {
+        width: 290px;
+    }
+    
+    .container.header .content .column .row.below-form .text .paragraph p::before {
+        width: 290px;
+    }
+
+    .container.header .content .column .row.below-form .img img {
+        display: none;
+    }
+
+    .container.benefits .img.bg {
+        height: 1400px;
+
+        margin: -70px auto 0;
+        
+        opacity: .1;
+        z-index: -1;
+    }
+
+    .container.benefits .content {
+        padding: 100px 16px;
+    }
+
+    .container.benefits .content .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container.benefits .content .row .column {
+        margin: 16px auto;
+    }
+
+    .container.benefits .content .row .column .img,
+    .container.benefits .content .row .column .img img {
+        width: 220px;
+        height: 120px;
+        
+        margin: -20px auto auto;
+    
+        object-fit: contain;
+    }
+
+    .container.benefits .content .row .column:last-child {
+        margin: 16px auto 0;
+    }
+
+    .container.benefits .content .row .column .discount-circle {
+        width: 78px;
+        height: 78px;
+        
+        margin: 0 auto 8px 66px;
+        padding: 20px 0;
+    }
+    
+    .container.benefits .content .row .column .discount-circle p {
+        color: var(--white);
+        
+        font-size: 10px;
+        line-height: 15px;
+        font-weight: 600;
+    }
+
+    .container.plans .content .row .img {
+        width: 84px;
+        
+        margin: 0 32px 0 0;
+    }
+
+    .container.plans .content .row .img:first-of-type {
+        width: 120px;
+    }
+
+    .container.table .content .text .title {
+        padding: 0 16px;
+    }
+
+    .container.table .content .text .title h1::before,
+    .container.table .content .text .title h1::after {
+        left: 16px;
+    }
+    
+    .container.table .content .row.table-nav {
+        height: 37px;
+    
+        margin: 64px 0 0;
+        padding: 0 4px;
+    }
+
+    .container.table .content .row.table-nav .tab-item {
+        width: 80%;
+    }
+
+    .container.table .content .row.table-nav .tab-item button {
+        font-size: 12px;
+    }
+
+    .container.table .content .row.table-nav .tab-item.open {
+        width: 80%;
+    
+        padding: 8px 4px;
+    
+        font-weight: 600;
+    }
+    
+    .container.table .content .row.table-nav .tab-item.open::after,
+    .container.table .content .row.table-nav .tab-item.open::before {
+        right: 50%;
+        left: 50%;
+
+        transform: translateX(-50%);
+    }
+
+    .container.table .content .column.plan .row:first-child {
+        padding: 52px 16px 16px;
+
+        overflow-x: scroll;
+    }    
+
+    .container.table .content .column.plan .card.best-seller .circle {
+        justify-content: center;
+    }
+
+    .container.table .content .column.discount .row .item .circle {
+        width: 66px;
+        height: 66px;
+
+        top: -2px;
+        left: 120px;
+        padding: 0 4px;
+    }
+
+    .container.table .content .column.discount .row .item .circle .text p {
+        font-size: 10px;
+        line-height: 15px;
+        font-weight: 500;
+    }
+
+    .container.table .content .column.discount .row .item.small .circle {
+        left: -40px;
+    }
+
+    .container.table .content .column.discount .row .item.large .circle {
+        top: -2px;
+        left: 140px;
+    }
+
+    .container.table .content .column.discount .row .item.small {
+        margin: 113px 0 0 0;
+        left: 88px;
+
+        z-index: 3;
+    }
+
+    .container.table .content .column.discount .row .item.small .img {
+        width: 98px;
+        height: 98px;
+    }
+
+    .container.table .content .column.discount .row .item.medium {
+        left: 30px;
+
+        z-index: 0;
+    }
+
+    .container.table .content .column.discount .row .item.medium .img {
+        width: 146px;
+        height: 146px;
+    }
+
+    .container.table .content .column.discount .row .item.large {
+        margin: 113px 0 0 0;
+        right: 93px;
+    }
+
+    .container.table .content .column.discount .row .item.large .img {
+        width: 177px;
+        height: 177px;
+    }
+
+    .container.differentials .content .row {
+        padding-bottom: 16px;
+
+        overflow-x: scroll;
+    }
+
+
+    .container.differentials .content .card {
+        min-width: 260px;
+        
+        margin: 0 32px 0 0;
+    }
+
+    .container.differentials .content .card .text i {    
+        font-size: 18px;
+    }
+
+    .container.steps .content .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container.steps .content .item,
+    .container.steps .content .item:nth-child(2),
+    .container.steps .content .item:nth-child(3) {
+        margin: 16px 0 0 0;
+    }
+
+    .container.steps .content .item .box .img,
+    .container.steps .content .item .box .img img {
+        width: 50px;
+
+        top: -8px;
+        left: -16px;
+    }
+
+    .container.contact .content .img,
+    .container.contact .content .img img {
+        width: 300px;
+        height: 94px;
+    }    
+
+    .container.contact .content .form {
+        padding: 16px;
+    }
+
+    .container.contact .content .form form .inputs .row {
+        margin: 0 auto 32px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container.contact .content .form form .inputs .input {
+        width: 100%;
+
+        margin: 0 0 16px 0;
+    }
+
+    .container.contact .content .form form .btn {
+        width: 100%;
+    }
+
+    .container.contact .content .form form .btn input {
+        padding: 8px 16px;
+    }
+
+    .container.faq .content .row .tab-item {
+        width: 100%;
+    }
+
+    .container.faq .content .row .tab-item button,
+    .container.faq .content .row .tab-item h2 {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+    }
+
+    .container.faq .content .row .tab-item.selected::after {
+        width: 100px;
+
+        right: 0;
+    }
+
+    .container.faq .content .column .column {
+        width: 90%; 
+    }
+
+    .container.help .content {
+        padding: 16px;
+    }
+
+    .container.help .content .text .title {
+        width: 95%;
+    }
+
+    .container.help .content .column .row {
+        margin: 32px auto 0;
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container.help .content .item {
+        margin: 8px auto;
+    }
+
+    .container.help .content .item .box {
+        margin: 0 0 4px 0;
+        padding: 8px 31px;
+    }
+
+    .container.help .content .item .box i {
+        margin: 0 8px 0 0;
+    
+        font-size: 22px;
+    }
+
+    footer .container.footer .content {
+        padding: 32px 16px;
+    }
+
+    footer .container.footer .content .row {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+
+    footer .container.footer .content .column {
+        align-items: center;
+    }
+
+    footer .container.footer .content .column.left .text {
+        margin: 32px auto;
+
+        text-align: center;
+    }
+
+    footer .container.footer .content .column.center {
+        margin: 64px auto 32px;
+    }
+}
+
+@media only screen and (min-device-width : 321px) and (max-device-width : 375px) {
+
 }
