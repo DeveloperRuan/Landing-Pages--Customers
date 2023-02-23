@@ -199,7 +199,7 @@ nav .container .content .nav-links .contact a {
     font-weight: 600;
 }
 
-nav .container .content .nav-links .contact i {
+nav .container .content .nav-links .contact box-icon {
     margin-right: 8px;
 
     font-size: 24px;
@@ -267,7 +267,7 @@ nav .container .content .nav-links .item.btn h6 a {
 
     position: relative;
 
-    opacity: .60;
+    opacity: .80;
 }
 
 .container.header .content .column.form {
@@ -648,6 +648,8 @@ nav .container .content .nav-links .item.btn h6 a {
 }
 
 .container.table .content .row.table-nav .tab-item button {
+    width: 100%;
+
     color: var(--white);
 }
 
@@ -931,17 +933,20 @@ nav .container .content .nav-links .item.btn h6 a {
     font-weight: 300;
 }
 
-.container.table .content .btn.cta a:hover {
+.container.table .content .btn.cta:hover {
     border: 1px solid var(--dark-blue);
     box-shadow: 0px 0px 20px 1px var(--dark-blue);
     
     background-color: var(--white);
-    color: var(--dark-blue);
     
     transform: scale(1.01);
     transition: all .3s;
     
     cursor: pointer;
+}
+
+.container.table .content .btn.cta:hover a {
+    color: var(--dark-blue);
 }
 
 .container.table .content .column.discount {
@@ -1163,10 +1168,17 @@ nav .container .content .nav-links .item.btn h6 a {
     color: var(--dark-blue);
 }
 
-.container.differentials .content .card .text i {
-    margin: 0 8px 0 0;
+.container.differentials .content .card .text svg {
+    width: 18px;
+    height: 18px;
+}
 
-    font-size: 24px;
+.container.differentials .content .card .text p {
+    margin: 0 0 0 8px;
+}
+
+.container.steps .content {
+    padding: 120px 135px;
 }
 
 .container.steps .content .text .title {
@@ -1336,6 +1348,10 @@ nav .container .content .nav-links .item.btn h6 a {
     transition: all .3s;
 }
 
+.container.faq .content {
+    padding: 100px 135px;
+}
+
 .container.faq .content .text .title {
     position: relative;
 
@@ -1381,7 +1397,7 @@ nav .container .content .nav-links .item.btn h6 a {
     margin: 64px auto 0;
 }
 
-.container.faq .content .row .tab-item {
+.container.faq .content .row .faq-tab-item {
     width: 270px;
     
     position: relative;
@@ -1389,20 +1405,20 @@ nav .container .content .nav-links .item.btn h6 a {
     text-align: center;
 }
 
-.container.faq .content .row .tab-item button,
-.container.faq .content .row .tab-item h2 {
+.container.faq .content .row .faq-tab-item button,
+.container.faq .content .row .faq-tab-item h2 {
     width: 100%;
 
     color: var(--dark-blue);
 }
 
-.container.faq .content .row .tab-item.selected {
+.container.faq .content .row .faq-tab-item.selected {
     color: var(--dark-blue);
 
     font-weight: 700;
 }
 
-.container.faq .content .row .tab-item.selected::after {
+.container.faq .content .row .faq-tab-item.selected::after {
     width: 270px;
     height: 2px;
     
@@ -1425,7 +1441,7 @@ nav .container .content .nav-links .item.btn h6 a {
     margin: 32px auto 0;
 }
 
-.container.faq .content .column .column .item {
+.container.faq .content .column .column .item-qa {
     position: relative;
     margin: 8px 0;
     padding: 16px 32px;
@@ -1437,42 +1453,42 @@ nav .container .content .nav-links .item.btn h6 a {
     color: var(--white);
 }
 
-.container.faq .content .column .column .item:hover {
+.container.faq .content .column .column .item-qa:hover {
     cursor: pointer;
 }
 
-.container.faq .content .column .column .item .text.question {
+.container.faq .content .column .column .item-qa .text.question {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.container.faq .content .column .column .item .text.question .icon {
+.container.faq .content .column .column .item-qa .text.question .icon-q {
     margin: 0 16px 0 0;
     font-size: 24px;
     font-weight: 700;
 }
 
-.container.faq .content .column .column .item .text.answer {
+.container.faq .content .column .column .item-qa .text.answer {
     margin: 16px 0 0;
     display: none;
     
     transition: all .3s;
 }
 
-.container.faq .content .column .column .item.open .text.answer {
+.container.faq .content .column .column .item-qa.open .text.answer {
     display: block;
     
     transition: all .3s;
 }
 
-.container.faq .content .column .column .item.open {
+.container.faq .content .column .column .item-qa.open {
     background-color: var(--dark-blue);
     box-shadow: none;
     
     transition: all .3s;
 }
-.container.faq .content .column .column .item.open .text.question p {
+.container.faq .content .column .column .item-qa.open .text.question p {
     font-weight: 700;
 }
 
@@ -1549,10 +1565,8 @@ nav .container .content .nav-links .item.btn h6 a {
     background-color: var(--white);
 }
 
-.container.help .content .item .box i {
-    margin: 0 16px 0 0;
-
-    font-size: 22px;
+.container.help .content .item .box h6 {
+    margin: 0 0 0 16px;
 }
 
 footer .container.footer .content {
@@ -1583,15 +1597,15 @@ footer .container.footer .content .column.center {
     text-align: center;
 }
 
-footer .container.footer .content .column.center i {
-    margin: 8px 16px 0 0;
-
-    color: var(--black);
-
-    font-size: 22px;
+footer .container.footer .content .column.center .icons {
+    margin-top: 8px;
 }
 
-footer .container.footer .content .column.center i:last-of-type {
+footer .container.footer .content .column.center .icons a {
+    margin-right: 16px;
+}
+
+footer .container.footer .content .column.center .icons a:last-of-type {
     margin: 0;
 }
 
@@ -1609,6 +1623,47 @@ footer .container.footer .content .column.right .text a {
 footer .container.footer .content .row ~ .text {
     margin: 64px 0 0 0;
     text-align: center;
+}
+
+.container.fixed {
+    position: fixed;
+    top: 89%;
+    
+    z-index: 100;
+}
+
+.container.fixed .content {
+    padding: 0;
+    justify-content: flex-end;
+}
+
+.container.fixed .content .row {
+    align-items: center;
+}
+
+.container.fixed .content img {
+    width: 64px;
+    height: 64px;
+}
+
+.container.fixed .content h6 {
+    color: var(--black);
+}
+
+.container.fixed .content a:hover h6 {
+    padding: 4px 8px;
+
+    border-radius: 32px;
+
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+
+@media only screen and (min-device-width : 426px) and (max-device-width : 786px) {
+    .container.table .content .column.plan .row:first-child {
+        overflow-x: scroll;
+    }
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
@@ -1692,21 +1747,26 @@ footer .container.footer .content .row ~ .text {
         align-items: center;
     }
 
+    .container.header .content .column .text .title {
+        margin-bottom: 32px;
+    }
+
     .container.header .content .column .img.header {
         width: 207px;
         height: 156px;
 
         position: absolute;
-        margin: 0 auto;
-        left: 0;
+        top: 27%;
         right: 0;
+        left: 0;
+        margin: auto;
+
+        z-index: -1;
     }
 
     .container.header .content .column .img.header img {
         width: 207px;
         height: 156px;
-
-        opacity: .10;
     }
 
     .container.header .content .column.form {
@@ -1749,7 +1809,7 @@ footer .container.footer .content .row ~ .text {
 
         margin: -70px auto 0;
         
-        opacity: .1;
+        opacity: .5;
         z-index: -1;
     }
 
@@ -1926,8 +1986,8 @@ footer .container.footer .content .row ~ .text {
         margin: 0 32px 0 0;
     }
 
-    .container.differentials .content .card .text i {    
-        font-size: 18px;
+    .container.steps .content {
+        padding: 50px 16px;
     }
 
     .container.steps .content .row {
@@ -1979,18 +2039,22 @@ footer .container.footer .content .row ~ .text {
         padding: 8px 16px;
     }
 
-    .container.faq .content .row .tab-item {
+    .container.faq .content {
+        padding: 50px 16px;
+    }
+
+    .container.faq .content .row .faq-tab-item {
         width: 100%;
     }
 
-    .container.faq .content .row .tab-item button,
-    .container.faq .content .row .tab-item h2 {
+    .container.faq .content .row .faq-tab-item button,
+    .container.faq .content .row .faq-tab-item h2 {
         font-size: 16px;
         line-height: 24px;
         font-weight: 400;
     }
 
-    .container.faq .content .row .tab-item.selected::after {
+    .container.faq .content .row .faq-tab-item.selected::after {
         width: 100px;
 
         right: 0;
@@ -2052,8 +2116,59 @@ footer .container.footer .content .row ~ .text {
     footer .container.footer .content .column.center {
         margin: 64px auto 32px;
     }
+    
+    .container.fixed .content img {
+        width: 74px;
+        height: 74px;
+    }
+
+    .container.fixed .content h6 {
+        display: none;
+    }
 }
 
 @media only screen and (min-device-width : 321px) and (max-device-width : 375px) {
+    nav .container .content .nav-links .contact a {
+        font-size: 10px;
+    }
 
+    nav .container .content .nav-links .contact i {
+        font-size: 18px;
+    }
+
+    .container.header .content .column .img.header {
+        width: 207px;
+        height: 156px;
+
+        position: absolute;
+        top: 30%;
+        right: 0;
+        left: 0;
+        margin: auto;
+
+        z-index: -1;
+    }
+}
+
+@media only screen and (min-device-width : 0px) and (max-device-width : 320px) {
+    nav .container .content .nav-links .contact a {
+        font-size: 7px;
+    }
+
+    nav .container .content .nav-links .contact i {
+        font-size: 18px;
+    }
+
+    .container.header .content .column .img.header {
+        width: 207px;
+        height: 156px;
+
+        position: absolute;
+        top: 32%;
+        right: 0;
+        left: 0;
+        margin: auto;
+
+        z-index: -1;
+    }
 }

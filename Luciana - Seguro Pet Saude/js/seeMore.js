@@ -1,16 +1,18 @@
 var liCount;
 
 $(document).ready(function () {
-    $('.text.benefits ul').each(function () {
-        liCount = $(this).children('li').length;
-        if (liCount > 10) {
-            $(this).next('.see-more').addClass('show-me');
+    const lists = document.querySelectorAll(".list");
+    lists.forEach(function (list) {
+        const liCount = list.querySelectorAll("li").length;
+
+        if (liCount > 9) {
+            list.querySelector(".see-more").classList.add("show-me");
         }
     });
 
     $('.see-more').click(function () {
         ($(this).text() === 'Ver mais') ? $(this).text('Ver menos') : $(this).text('Ver mais');
 
-        $(this).prev('ul').find('li').toggleClass('show-list');
+        $(this).parent().parent().find('li').toggleClass('show-list');
     });
 });

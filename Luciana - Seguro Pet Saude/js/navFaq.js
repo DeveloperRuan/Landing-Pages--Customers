@@ -9,8 +9,7 @@ function openFaq(faqName) {
     document.getElementById(faqName).style.display = "flex";  
 };
 
-let faqLinks = document.querySelectorAll('.faq-nav-link');
-let faqLinksDecor = document.querySelectorAll('.faq-decor');
+let faqLinks = document.querySelectorAll('.faq-tab-item');
 
 faqLinks.forEach((thisButton, index) => {
     thisButton.addEventListener('click', () => {
@@ -18,14 +17,5 @@ faqLinks.forEach((thisButton, index) => {
         faqLinks[index].classList !== 'selected'
         ? faqLinks[index].classList.add('selected')
         : faqLinks[index].classList.remove('selected');
-    });
-});
-
-faqLinksDecor.forEach((thisButton, index) => {
-    thisButton.addEventListener('click', () => {
-        faqLinksDecor.forEach(a => a.classList.remove('txt-bd'));
-        faqLinksDecor[index].classList !== 'txt-bd'
-        ? faqLinksDecor[index].classList.add('txt-bd')
-        : faqLinksDecor[index].classList.remove('txt-bd');
     });
 });
