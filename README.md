@@ -3,7 +3,7 @@
 
 Um repositório destinado ao armazenamento das Landing Pages criadas por mim para meus clientes.
 
-O objetivo é depositar aqui todas as minhas páginas para a visualização dos meus avanços como programador e designer.
+O objetivo é depositar aqui todas as minhas páginas para a visualização da minha evolução como programador e designer.
 
 
 ## Projetos
