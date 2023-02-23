@@ -1633,34 +1633,97 @@ footer .container.footer .content .row ~ .text {
 }
 
 .container.fixed .content {
-    padding: 0;
-    justify-content: flex-end;
+    padding: 0 16px;
 }
 
 .container.fixed .content .row {
+    justify-content: space-between;
     align-items: center;
 }
 
-.container.fixed .content img {
+.container.fixed .content .item:first-of-type .img img {
+    width: 40px;
+    height: 40px;
+    
+    filter: drop-shadow(0px 4px 8px #121718b4);
+    
+    opacity: .5;
+}
+
+.container.fixed .content .item:first-of-type button:hover .img img {
+    opacity: 1;
+}
+
+.container.fixed .content .item .modal {
+    width: 280px;
+    
+    position: absolute;
+    top: -170px;
+    left: 32px;
+    padding: 16px;
+    
+    background-color: #edececdb;
+    
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #1217187a;
+}
+
+.container.fixed .content .item .modal .text:first-child {
+    margin-bottom: 16px;
+}
+
+.container.fixed .content .item .modal .text:first-child small,
+.container.fixed .content .item .modal .text:last-of-type small a { 
+    color: var(--dark-blue);
+    font-weight: 600;
+}
+
+.container.fixed .content .item .modal .text:last-child small {
+    color: var(--black);
+}
+
+.container.fixed .content .item .modal button {
+    width: 100px;
+    
+    margin: 16px auto 0 0;
+    padding: 4px;
+    
+    background-color: var(--dark-blue);
+    
+    border-radius: 32px;
+    
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.container.fixed .content .item .modal button:hover {
+    background-color: var(--grey);
+
+    border: 1px solid var(--dark-blue);
+
+    color: var(--black);
+}
+
+.container.fixed .content .item img {
     width: 64px;
     height: 64px;
 }
 
-.container.fixed .content h6 {
+.container.fixed .content .item h6 {
     color: var(--black);
 }
 
-.container.fixed .content a:hover h6 {
+.container.fixed .content .item a:hover h6 {
     padding: 4px 8px;
-
+    
     border-radius: 32px;
-
+    
     background-color: var(--dark-blue);
     color: var(--white);
 }
 
-
-@media only screen and (min-device-width : 426px) and (max-device-width : 786px) {
+@media only screen and (min-device-width : 426px) and (max-device-width : 1024px) {
     .container.table .content .column.plan .row:first-child {
         overflow-x: scroll;
     }
@@ -2124,6 +2187,13 @@ footer .container.footer .content .row ~ .text {
 
     .container.fixed .content h6 {
         display: none;
+    }
+
+    .container.fixed .content .item .modal {
+        width: 260px;
+        
+        position: absolute;
+        top: -150px;
     }
 }
 

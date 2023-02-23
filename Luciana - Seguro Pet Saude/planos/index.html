@@ -9,10 +9,6 @@
         
         <meta name="keywords" content="plano de saude para pets, plano saude cachorro, plano saude gato, petlove, plamev, coover cuidados com o pet, saude animal" />
         <meta name="description" content="Contrate o plano de saúde ideal para o seu pet! Retribua o afeto que ele lhe proporciona da melhor forma. Proteja Seu Pet Agora! Os melhores preços estão aqui!" />
-        
-        <!-- cookies -->
-        <meta name="adopt-website-id" content="73a9180b-5b51-4442-ba29-c401046bf4dc" />
-        <script src="//tag.goadopt.io/injector.js?website_code=73a9180b-5b51-4442-ba29-c401046bf4dc" class="adopt-injector"></script>
 
         <!-- Google Tag Manager -->
         <script defer>(function (w, d, s, l, i) {
@@ -37,6 +33,7 @@
         <script src="../js/navPlans.js" defer></script>
         <script src="../js/navFaq.js" defer></script>
         <script src="../js/seeMore.js" defer></script>
+        <script src="../js/modal.js" defer></script>
     </head> 
 
     <body>
@@ -97,12 +94,38 @@
         <section id="fixed">
             <div class="container fixed">
                 <div class="content">
-                    <a target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=5511951607141&text=Ol%C3%A1!%20Gostaria%20de%20contratar!">
-                        <div class="row">
-                            <h6>Converse conosco!</h6>
-                            <img src="../src/images/logos/whatsapp.svg" alt="Logo WhatsApp">
+                    <div class="row">
+                        <div class="item">
+                            <button id="modal-btn">
+                                <div class="img">
+                                    <img id="image" src="../src/images/logos/seguro_pet_saude_favicon.webp" alt="Seguro Pet Saude Logo">
+                                </div>
+                            </button>
+
+                            <div class="modal" id="modal-box" style="display: none;">
+                                <div class="column">
+                                    <div class="text">
+                                        <small>Controle sua privacidade</small>
+                                    </div>
+
+                                    <div class="text">
+                                        <small>Nosso site usa cookies para melhorar a navegação. <a href="../privacidade.html">Política de Privacidade</a> | <a href="../termos.html">Termos de uso</a></small>
+                                    </div>
+
+                                    <button id="close">Entendi!</button>
+                                </div>
+                            </div>
                         </div>
-                    </a>
+    
+                        <div class="item">
+                            <a target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send?phone=5511951607141&text=Ol%C3%A1!%20Gostaria%20de%20contratar!">
+                                <div class="row">
+                                    <h6>Converse conosco!</h6>
+                                    <img src="../src/images/logos/whatsapp.svg" alt="Logo WhatsApp">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -188,7 +211,7 @@
             <section id="benefits">
                 <div class="container benefits">
                     <div class="img bg">
-                        <img loading="lazy" alt="Imagem de fundo"> 
+                        <img loading="lazy"> 
                     </div>
                     <div class="content">
                         <div class="column">
