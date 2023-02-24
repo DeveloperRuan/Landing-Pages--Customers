@@ -166,7 +166,7 @@ nav .container .content .row .logo {
     margin: auto 0;
 }
 
-nav .container .content .row .logo img {
+nav .container .content .row .logo picture img {
     width: 100%;
     height: 100%;
 }
@@ -261,7 +261,7 @@ nav .container .content .nav-links .item.btn h6 a {
 }
 
 .container.header .content .column .img.header, 
-.container.header .content .column .img.header img {
+.container.header .content .column .img.header picture img {
     width: 570px;
     height: 428px;
 
@@ -446,11 +446,10 @@ nav .container .content .nav-links .item.btn h6 a {
     z-index: -1;
 }
 
-.container.benefits .img.bg img {
+.container.benefits .img.bg picture img {
     width: 100%;
     height: 100%;
     
-    background-image: url(../src/images/backgrounds/pet_vector_bg.webp);
     background-repeat: repeat;
     
     opacity: 0.1;
@@ -482,7 +481,7 @@ nav .container .content .nav-links .item.btn h6 a {
     
 }
 
-.container.benefits .content .row .column .img img {
+.container.benefits .content .row .column .img picture img {
     width: 270px;
     height: 150px;
     
@@ -1062,9 +1061,9 @@ nav .container .content .nav-links .item.btn h6 a {
 }
 
 .container.table .content .column.discount .row .item .img,
-.container.table .content .column.discount .row .item .img img { 
-    width: 70%;
-    height: 70%;
+.container.table .content .column.discount .row .item .img picture img { 
+    width: 100%;
+    height: 100%;
 
     position: relative;
     
@@ -1249,7 +1248,7 @@ nav .container .content .nav-links .item.btn h6 a {
 }
 
 .container.contact .content .img,
-.container.contact .content .img img {
+.container.contact .content .img picture img {
     width: 770px;
     height: 242px;
     
@@ -1641,7 +1640,7 @@ footer .container.footer .content .row ~ .text {
     align-items: center;
 }
 
-.container.fixed .content .item:first-of-type .img img {
+.container.fixed .content .item:first-of-type .img picture img {
     width: 40px;
     height: 40px;
     
@@ -1650,7 +1649,7 @@ footer .container.footer .content .row ~ .text {
     opacity: .5;
 }
 
-.container.fixed .content .item:first-of-type button:hover .img img {
+.container.fixed .content .item:first-of-type button:hover .img picture img {
     opacity: 1;
 }
 
@@ -1658,7 +1657,7 @@ footer .container.footer .content .row ~ .text {
     width: 280px;
     
     position: absolute;
-    top: -170px;
+    top: -190px;
     left: 32px;
     padding: 16px;
     
@@ -1827,7 +1826,7 @@ footer .container.footer .content .row ~ .text {
         z-index: -1;
     }
 
-    .container.header .content .column .img.header img {
+    .container.header .content .column .img.header picture img {
         width: 207px;
         height: 156px;
     }
@@ -1890,7 +1889,7 @@ footer .container.footer .content .row ~ .text {
     }
 
     .container.benefits .content .row .column .img,
-    .container.benefits .content .row .column .img img {
+    .container.benefits .content .row .column .img picture img {
         width: 220px;
         height: 120px;
         
@@ -2065,7 +2064,7 @@ footer .container.footer .content .row ~ .text {
     }
 
     .container.steps .content .item .box .img,
-    .container.steps .content .item .box .img img {
+    .container.steps .content .item .box .img picture img {
         width: 50px;
 
         top: -8px;
@@ -2073,7 +2072,7 @@ footer .container.footer .content .row ~ .text {
     }
 
     .container.contact .content .img,
-    .container.contact .content .img img {
+    .container.contact .content .img picture img {
         width: 300px;
         height: 94px;
     }    
@@ -2193,7 +2192,7 @@ footer .container.footer .content .row ~ .text {
         width: 260px;
         
         position: absolute;
-        top: -150px;
+        top: -160px;
     }
 }
 
