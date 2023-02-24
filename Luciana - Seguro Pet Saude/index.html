@@ -35,6 +35,7 @@
         <link rel="shortcut icon" href="./src/images/logos/seguro_pet_saude_favicon.webp" type="image/x-icon">
         
         <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" media="(min-width: 320px)" href="./styles/style.css" media="print" onload="this.media='all'">
         
         <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.slim.min.js" integrity="sha512-jxwTCbLJmXPnV277CvAjAcWAjURzpephk0f0nO2lwsvcoDMqBdy1rh1jEwWWTabX1+Grdmj9GFAgtN22zrV0KQ==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
@@ -52,7 +53,11 @@
                         <div class="logo">
                             <div class="column">
                                 <a href="#header">
-                                    <img loading="lazy" src="./src/images/logos/seguro_pet_saude_logo.webp" alt="Logo - Seguro Pet Saúde">
+                                    <picture>
+                                        <source media="(min-width: 1024px)" srcset="./src/images/desktop/logos/seguro_pet_saude_logo.webp">
+                                        <source media="(min-width: 320px)" srcset="./src/images/desktop/logos/seguro_pet_saude_logo.webp">
+                                        <img loading="lazy" src="./src/images/desktop/logos/seguro_pet_saude_logo.webp" alt="Logo - Seguro Pet Saúde">
+                                    </picture>
 
                                     <small>Águia Corretagem</small>
                                 </a>
@@ -100,7 +105,11 @@
                         <div class="item">
                             <button id="modal-btn">
                                 <div class="img">
-                                    <img id="image" src="./src/images/logos/seguro_pet_saude_favicon.webp" alt="Seguro Pet Saude Logo">
+                                    <picture>
+                                        <source media="(min-width: 1024px)" srcset="./src/images/desktop/logos/seguro_pet_saude_favicon.webp">
+                                        <source media="(min-width: 320px)" srcset="./src/images/mobile/logos/seguro_pet_saude_favicon.webp">
+                                        <img id="image" loading="lazy" src="./src/images/desktop/logos/seguro_pet_saude_favicon.webp" alt="Seguro Pet Saude Logo">
+                                    </picture>
                                 </div>
                             </button>
 
@@ -111,7 +120,7 @@
                                     </div>
 
                                     <div class="text">
-                                        <small>Nosso site usa cookies para melhorar a navegação. <a href="/privacidade.html">Política de Privacidade</a> | <a href="/termos.html">Termos de uso</a></small>
+                                        <small>Nosso site usa cookies para melhorar a navegação. Se você continuar no site, estará concordando com a  <a href="/privacidade.html">Política de Privacidade</a> e os <a href="/termos.html">Termos de uso</a></small>
                                     </div>
 
                                     <button id="close">Entendi!</button>
@@ -146,7 +155,11 @@
                                     </div>
     
                                     <div class="img header">
-                                        <img src="./src/images/pets/woman_pets.webp" alt="Mulher segurando cachorro e gato">
+                                        <picture>
+                                            <source media="(min-width: 1024px)" srcset="./src/images/desktop/woman_pets.webp">
+                                            <source media="(min-width: 320px)" srcset="./src/images/desktop/woman_pets.webp">
+                                            <img src="./src/images/desktop/woman_pets.webp" alt="Mulher segurando cachorro e gato">
+                                        </picture>
                                     </div>
                                 </div>
     
@@ -213,7 +226,11 @@
             <section id="benefits">
                 <div class="container benefits">
                     <div class="img bg">
-                        <img loading="lazy"> 
+                        <picture>
+                            <source media="(min-width: 1024px)" srcset="./src/images/desktop/backgrounds/pet_vector_bg.webp">
+                            <source media="(min-width: 320px)" srcset="./src/images/mobile/backgrounds/pet_vector_bg.webp">
+                            <img loading="lazy" src="./src/images/desktop/backgrounds/pet_vector_bg.webp" alt="Imagem de fundo">
+                        </picture>
                     </div>
 
                     <div class="content">
@@ -231,7 +248,11 @@
                                     </div>
 
                                     <div class="img">
-                                        <img loading="lazy" src="./src/images/racoes.webp" alt="Pacotes de rações">
+                                        <picture>
+                                            <source media="(min-width: 1024px)" srcset="./src/images/desktop/racoes.webp">
+                                            <source media="(min-width: 320px)" srcset="./src/images/desktop/racoes.webp">
+                                            <img loading="lazy" src="./src/images/desktop/racoes.webp" alt="Pacotes de rações">
+                                        </picture>
                                     </div>
 
                                     <div class="text">
@@ -246,7 +267,11 @@
                                     </div>
 
                                     <div class="img">
-                                        <img loading="lazy" src="./src/images/antipulagas.webp" alt="Caixas de antipulgas">
+                                        <picture>
+                                            <source media="(min-width: 1024px)" srcset="./src/images/desktop/antipulagas.webp">
+                                            <source media="(min-width: 320px)" srcset="./src/images/desktop/antipulagas.webp">
+                                            <img loading="lazy" src="./src/images/desktop/antipulagas.webp" alt="Caixas de antipulgas">
+                                        </picture>
                                     </div>  
 
                                     <div class="text">
@@ -261,7 +286,11 @@
                                     </div>
 
                                     <div class="img">
-                                        <img loading="lazy" src="./src/images/pet-toys.webp" alt="Brinquedos para cães e gatos">
+                                        <picture>
+                                            <source media="(min-width: 1024px)" srcset="./src/images/desktop/pet-toys.webp">
+                                            <source media="(min-width: 320px)" srcset="./src/images/desktop/pet-toys.webp">
+                                            <img loading="lazy" src="./src/images/desktop/pet-toys.webp" alt="Brinquedos para cães e gatos">
+                                        </picture>
                                     </div>
 
                                     <div class="text">
@@ -618,7 +647,11 @@
                                             </div>
 
                                             <div class="img">
-                                                <img loading="lazy" src="./src/images/pets/two_pets.webp" alt="Dois cachorros">
+                                                <picture>
+                                                    <source media="(min-width: 1024px)" srcset="./src/images/desktop/pets/two_pets.webp">
+                                                    <source media="(min-width: 320px)" srcset="./src/images/desktop/pets/two_pets.webp">
+                                                    <img loading="lazy" src="./src/images/desktop/pets/two_pets.webp" alt="Dois cachorros">
+                                                </picture>
                                             </div>
                                         </div><!-- Fim do desconto 01 -->
 
@@ -630,7 +663,11 @@
                                             </div>
 
                                             <div class="img">
-                                                <img loading="lazy" src="./src/images/pets/three_pets.webp" alt="Três gatos">
+                                                <picture>
+                                                    <source media="(min-width: 1024px)" srcset="./src/images/desktop/pets/three_pets.webp">
+                                                    <source media="(min-width: 320px)" srcset="./src/images/desktop/pets/three_pets.webp">
+                                                    <img loading="lazy" src="./src/images/desktop/pets/three_pets.webp" alt="Três gatos">
+                                                </picture>
                                             </div>
                                         </div><!-- Fim do desconto 02 -->
 
@@ -642,7 +679,11 @@
                                             </div>
 
                                             <div class="img">
-                                                <img loading="lazy" src="./src/images/pets/five_pets.webp" alt="Três cachorros e dois gatos">
+                                                <picture>
+                                                    <source media="(min-width: 1024px)" srcset="./src/images/desktop/pets/five_pets.webp">
+                                                    <source media="(min-width: 320px)" srcset="./src/images/desktop/pets/five_pets.webp">
+                                                    <img loading="lazy" src="./src/images/desktop/pets/five_pets.webp" alt="Três cachorros e dois gatos">
+                                                </picture>
                                             </div>
                                         </div><!-- Fim do desconto 03 -->
                                     </div>
@@ -923,7 +964,11 @@
                                             </div>
 
                                             <div class="img">
-                                                <img loading="lazy" src="./src/images/pets/two_pets.webp" alt="Dois cachorros">
+                                                <picture>
+                                                    <source media="(min-width: 1024px)" srcset="./src/images/desktop/pets/two_pets.webp">
+                                                    <source media="(min-width: 320px)" srcset="./src/images/desktop/pets/two_pets.webp">
+                                                    <img loading="lazy" src="./src/images/desktop/pets/two_pets.webp" alt="Dois cachorros">
+                                                </picture>
                                             </div>
                                         </div><!-- Fim do desconto 01 -->
 
@@ -935,7 +980,11 @@
                                             </div>
 
                                             <div class="img">
-                                                <img loading="lazy" src="./src/images/pets/three_pets.webp" alt="Três gatos">
+                                                <picture>
+                                                    <source media="(min-width: 1024px)" srcset="./src/images/desktop/pets/three_pets.webp">
+                                                    <source media="(min-width: 320px)" srcset="./src/images/desktop/pets/three_pets.webp">
+                                                    <img loading="lazy" src="./src/images/desktop/pets/three_pets.webp" alt="Três gatos">
+                                                </picture>
                                             </div>
                                         </div><!-- Fim do desconto 02 -->
 
@@ -947,7 +996,11 @@
                                             </div>
 
                                             <div class="img">
-                                                <img loading="lazy" src="./src/images/pets/five_pets.webp" alt="Três cachorros e dois gatos">
+                                                <picture>
+                                                    <source media="(min-width: 1024px)" srcset="./src/images/desktop/pets/five_pets.webp">
+                                                    <source media="(min-width: 320px)" srcset="./src/images/desktop/pets/five_pets.webp">
+                                                    <img loading="lazy" src="./src/images/desktop/pets/five_pets.webp" alt="Três cachorros e dois gatos">
+                                                </picture>
                                             </div>
                                         </div><!-- Fim do desconto 03 -->
                                     </div>
@@ -1156,7 +1209,11 @@
                     <div class="content">
                         <div class="column">
                             <div class="img">
-                                <img loading="lazy" src="./src/images/pets/dogs_form.webp" alt="Cinco cachorros">
+                                <picture>
+                                    <source media="(min-width: 1024px)" srcset="./src/images/desktop/pets/dogs_form.webp">
+                                    <source media="(min-width: 320px)" srcset="./src/images/desktop/pets/dogs_form.webp">
+                                    <img loading="lazy" src="./src/images/desktop/pets/dogs_form.webp" alt="Cinco cachorros">
+                                </picture>
                             </div>
 
                             <div class="form">
